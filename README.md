@@ -1,38 +1,86 @@
-# detailing_studio
+# Detailing Studio - Pawel Wnek
 
-This template should help get you started developing with Vue 3 in Vite.
+## Content of Project
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Project Status](#project-status)
+* [Support](#support)
+* [License](#license)
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## General info
 
-## Recommended Browser Setup
+**Detailing Studio - Pawel Wnek** is a *single-page web application* currently under development. The project is focused on supporting business growth by increasing online visibility and making it easier for customers to schedule appointments.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+The website is designed as a modern, simple, and user-friendly presentation of detailing services, with emphasis on clarity and accessibility.
 
-## Customize configuration
+The application consists of the following main sections:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+* **Main** – introductory section presenting the studio and its core message
+* **Services** – overview of available detailing services
+* **Gallery** – visual presentation of completed work
+* **About Us** – general information about the company
+* **Book Now** – section dedicated to appointment booking
+* **Contact** – contact information and basic inquiry options
 
-## Project Setup
+---
 
-```sh
+## Technologies
+
+* Vue 3
+* Vite
+* Node.js
+
+---
+
+## Setup
+
+### Install dependencies:
+
+To install all required dependencies, run the following command:
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Run the project locally:
 
-```sh
+To start the application in development mode, use the command:
+
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+The application will be available at:<br/>
+http://localhost:5173
 
-```sh
+### Build for production:
+
+To create a production-ready build, run:
+```bash
 npm run build
 ```
+
+The production files will be generated in the dist/ folder, ready for deployment.
+
+---
+
+## Project Status
+
+The project is currently in early development. The main structure of the application is being set up, including core layout, routing, and initial views.
+
+At this stage, work is focused on building the foundation of the UI and preparing the application for further feature implementation, such as service presentation, gallery, and booking functionality.
+
+Future updates will include expanding functionality, improving UI/UX, and integrating a booking system for appointments.
+
+---
+
+## Support
+The application is currently under development. If you have any questions regarding functionality, project progress, or require any changes, please contact us.
+
+---
+
+## License
+The application was created for project purposes and is the property of its author. The source code is available exclusively for support and maintenance purposes unless otherwise specified in a separate agreement.
