@@ -7,14 +7,20 @@ body {
   color: var(--cl-white);
 }
 
+section {
+  padding: 25px 40px;
+}
+
 h1 {
   font-weight: 700;
   font-size: var(--fs-big);
+  text-transform: uppercase;
 }
 
 h2 {
   font-weight: 700;
   font-size: var(--fs-medium);
+  text-transform: uppercase;
 }
 
 p {
