@@ -1,0 +1,13 @@
+:root {
+  --ff-lato: "Lato";
+  --ff-montserrat: "Montserrat";
+
+  --fs-small: clamp(16px, 1.5vw, 20px);
+  --fs-medium: clamp(24px, 2.5vw, 32px);
+  --fs-big: clamp(32px, 4vw, 48px);
+
+  --cl-black: #000000;
+  --cl-white: #ffffff;
+  --cl-graphite: #313131;
+  --cl-dim-grey: #666666;
+}
