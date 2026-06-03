@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar">
-    <div class="logo">Pawel Wnek</div>
+    <h2 class="logo">Pawel Wnek</h2>
     <div class="burger" @click="toggleMenu" role="button" tabindex="0">
       <span></span>
       <span></span>
@@ -37,19 +37,17 @@ onBeforeUnmount(() => {
 <style lang="scss" scoped>
   .navbar {
     align-items: center;
+    background-color: var(--cl-black);
+    border-bottom: 1px solid var(--cl-dim-grey);
     display: flex;
     font-family: var(--ff-lato), sans-serif;
     justify-content: space-between;
+    left: 0;
     padding: 25px 40px;
+    position: fixed;
+    top: 0;
     width: 100%;
     z-index: 99;
-
-
-    .logo {
-      font-size: var(--fs-medium);
-      font-weight: 700;
-      text-transform: uppercase;
-    }
 
     .burger {
       cursor: pointer;
@@ -82,7 +80,6 @@ onBeforeUnmount(() => {
 
   @media (max-width: 992px) {
     .navbar {
-      position: relative;
 
       .burger {
         display: flex;
