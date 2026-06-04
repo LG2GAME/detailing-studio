@@ -8,7 +8,6 @@
         everywhere you go.</p>
       <Button href="https://bookme.now" label="Get appointment" />
     </div>
-    <div class="background-image"></div>
   </section>
 </template>
 
@@ -23,72 +22,27 @@
     min-height: 100vh;
     position: relative;
 
+    &::after {
+      background: url("@/assets/1_hero.jpg") right center / contain no-repeat;
+      content: "";
+      filter: blur(2.25px);
+      inset: 0 0 0 auto;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+
     .container {
       display: flex;
       flex-direction: column;
       gap: 40px;
-      width: 40%;
-    }
-
-    .background-image {
-      background-image: url("@/assets/1_hero.jpg");
-      background-position: right;
-      background-repeat: no-repeat;
-      background-size: contain;
-      height: 100%;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 50%;
-      z-index: -1;
-
-      &::before{
-        -webkit-backdrop-filter: blur(3.2px);
-        backdrop-filter: blur(3.5px);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        content: "";
-        height: 100%;
-        position: absolute;
-        width: 100%;
-      }
-    }
-  }
-
-  @media (max-width: 992px) {
-    .hero {
-      .container {
-        width: 60%;
-      }
-
-      .background-image {
-        width: 40%;
-      }
+      width: min(100%, 40rem);
     }
   }
 
   @media (max-width: 768px) {
-    .hero {
-      .container {
-        width: 70%;
-      }
-
-      .background-image {
-        width: 40%;
-      }
-    }
-  }
-
-  @media (max-width: 576px) {
-    .hero {
-      .container {
-        width: 100%;
-        align-items: center;
-      }
-
-      .background-image {
-        width: 100%;
-        opacity: 0.5;
-      }
+    .hero::after {
+      opacity: 0.75
     }
   }
 </style>
