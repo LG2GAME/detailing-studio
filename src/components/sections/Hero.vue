@@ -1,18 +1,20 @@
 <template>
   <section class="hero">
-    <div class="container">
+    <div class="hero-container">
       <h1>Detailing Studio</h1>
       <p>Precision detailing for those who appreciate excellence.
         We specialize in turning tired, neglected vehicles into
         stunning, protected machines that turn heads
         everywhere you go.</p>
-      <Button href="https://bookme.now" label="Get appointment" />
+      <Button type="button" href="https://bookme.now"><img :src="calendarImg" alt=""> Get appointment</Button>
     </div>
   </section>
 </template>
 
 <script setup>
   import Button from '@/components/ui/Button.vue'
+
+  import calendarImg from "@/assets/calendar.svg"
 </script>
 
 <style lang="scss" scoped>
@@ -32,7 +34,7 @@
       z-index: -1;
     }
 
-    .container {
+    &-container {
       display: flex;
       flex-direction: column;
       gap: 40px;
