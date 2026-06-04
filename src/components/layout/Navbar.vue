@@ -44,7 +44,7 @@ onBeforeUnmount(() => {
     justify-content: space-between;
     left: 0;
     padding: 25px 40px;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 99;
