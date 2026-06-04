@@ -1,11 +1,20 @@
 <template>
-  <a :href="href" target="_blank" rel="noopener noreferrer" class="btn"><img src="@/assets/calendar.svg" alt=""> {{label}}</a>
+  <a v-if="type === 'button'" :href="href" target="_blank" rel="noopener noreferrer" class="btn">
+    <slot />
+  </a>
+
+  <div v-else class="btn btn-decor">
+    <slot />
+  </div>
 </template>
 
 <script setup>
 defineProps({
-  label: String,
-  href: String
+  href: String,
+  type: {
+    type: String,
+    default: 'button'
+  }
 })
 </script>
 
@@ -21,5 +30,11 @@ defineProps({
     padding: 10px 20px;
     text-transform: uppercase;
     width: fit-content;
+
+    &-decor {
+      cursor: default;
+      font-size: var(--fs-medium);
+      font-weight: 600;
+    }
   }
 </style>
