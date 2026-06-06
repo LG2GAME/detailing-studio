@@ -49,9 +49,10 @@
 
 <style lang="scss" scoped>
   .services {
-    align-items: center;
+    place-items: center;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 
     &-container {
       display: grid;
