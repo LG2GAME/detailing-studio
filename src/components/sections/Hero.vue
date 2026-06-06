@@ -6,20 +6,18 @@
         We specialize in turning tired, neglected vehicles into
         stunning, protected machines that turn heads
         everywhere you go.</p>
-      <Button type="button" href="https://bookme.now"><img :src="calendarImg" alt=""> Get appointment</Button>
+      <Button type="button" href="https://bookme.now"><img src="@/assets/calendar.svg" alt=""> Get appointment</Button>
     </div>
   </section>
 </template>
 
 <script setup>
   import Button from '@/components/ui/Button.vue'
-
-  import calendarImg from "@/assets/calendar.svg"
 </script>
 
 <style lang="scss" scoped>
   .hero {
-    align-items: center;
+    place-items: center;
     display: flex;
     min-height: 100vh;
     position: relative;
