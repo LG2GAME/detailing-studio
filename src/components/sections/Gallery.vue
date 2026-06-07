@@ -1,27 +1,23 @@
 <template>
   <section class="gallery">
     <Title>Gallery</Title>
-    <div class="gallery-container">a</div>
+    <BeforeAfterSlider />
   </section>
 </template>
 
 <script setup>
   import Title from "@/components/ui/Title.vue";
+  import BeforeAfterSlider from "@/components/media/BeforeAfterSlider.vue";
 </script>
 
 <style lang="scss" scoped>
   .gallery {
-    width: 100%;
-    min-height: 100vh;
-    gap: 40px;
     display: flex;
-    place-items: center;
     flex-direction: column;
-    
-    &-container {
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-    }
+    gap: 40px;
+    height: 100vh;
+    place-items: center;
+    width: 100%;
   }
+
 </style>
