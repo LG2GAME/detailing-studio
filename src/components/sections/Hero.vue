@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <div class="hero-container">
+    <div class="hero-content">
       <h1>Detailing Studio</h1>
       <p>Precision detailing for those who appreciate excellence.
         We specialize in turning tired, neglected vehicles into
@@ -32,7 +32,7 @@
       z-index: -1;
     }
 
-    &-container {
+    &-content {
       display: flex;
       flex-direction: column;
       gap: 40px;
