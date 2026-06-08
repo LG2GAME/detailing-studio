@@ -49,15 +49,15 @@
 
 <style lang="scss" scoped>
   .services {
-    place-items: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
+    place-items: center;
 
     &-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 
       .card {
         &-title {
