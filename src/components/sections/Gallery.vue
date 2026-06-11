@@ -1,5 +1,5 @@
 <template>
-  <section class="gallery">
+  <section class="gallery" id="gallery">
     <Title>Gallery</Title>
     <component :is="currentComponent" />
   </section>
