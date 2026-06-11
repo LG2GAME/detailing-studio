@@ -4,6 +4,7 @@
     <Hero />
     <Services />
     <Gallery />
+    <AboutUs />
   </main>
 </template>
 
@@ -12,4 +13,5 @@
   import Hero from "@/components/sections/Hero.vue";
   import Services from "@/components/sections/Services.vue";
   import Gallery from "@/components/sections/Gallery.vue";
+  import AboutUs from "@/components/sections/AboutUs.vue";
 </script>
