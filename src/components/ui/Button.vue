@@ -1,5 +1,11 @@
 <template>
-  <a v-if="type === 'button'" :href="href" target="_blank" rel="noopener noreferrer" class="btn">
+  <a
+    v-if="type === 'button'"
+    :href="href"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn"
+  >
     <slot />
   </a>
 
@@ -23,30 +29,30 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-  .btn {
-    align-items: center;
-    border: 1px solid var(--cl-white);
-    cursor: pointer;
-    display: flex;
-    font-size: var(--fs-small);
-    font-weight: 300;
-    gap: 10px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    width: fit-content;
+.btn {
+  align-items: center;
+  border: 1px solid var(--cl-white);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--fs-small);
+  font-weight: 300;
+  gap: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  width: fit-content;
 
-    &-decor {
-      cursor: default;
-      font-size: var(--fs-medium);
-      font-weight: 600;
-    }
-
-    &-gallery-reset {
-      border: 3px solid var(--cl-white);
-      padding: 5px 10px;
-      background-color: rgba(255, 255, 255, 0.4);
-      font-size: var(--fs-small);
-      font-weight: 600;
-    }
+  &-decor {
+    cursor: default;
+    font-size: var(--fs-medium);
+    font-weight: 600;
   }
+
+  &-gallery-reset {
+    border: 3px solid var(--cl-white);
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: var(--fs-small);
+    font-weight: 600;
+  }
+}
 </style>
