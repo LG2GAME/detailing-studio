@@ -1,6 +1,6 @@
 <template>
   <section class="gallery" id="gallery">
-    <Title>Gallery</Title>
+    <BaseTitle>Gallery</BaseTitle>
     <component :is="currentComponent" />
   </section>
 </template>
@@ -8,9 +8,9 @@
 <script setup>
 import { computed, ref, onBeforeUnmount, onMounted } from 'vue'
 
-import Title from '@/components/ui/Title.vue'
-import BeforeAfterSlider from '@/components/media/BeforeAfterSlider.vue'
-import MobileGallery from '@/components/media/MobileGallery.vue'
+import BaseTitle from '@/components/ui/BaseTitle.vue'
+import BeforeAfterSliderMedia from '@/components/media/BeforeAfterSliderMedia.vue'
+import MobileGalleryMedia from '@/components/media/MobileGalleryMedia.vue'
 
 const innerWidth = ref(window.innerWidth)
 
@@ -19,7 +19,7 @@ const handleResize = () => {
 }
 
 const currentComponent = computed(() =>
-  innerWidth.value <= 768 ? MobileGallery : BeforeAfterSlider
+  innerWidth.value <= 768 ? MobileGalleryMedia : BeforeAfterSliderMedia
 )
 
 onMounted(() => {

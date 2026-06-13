@@ -1,29 +1,29 @@
 <template>
   <section class="services" id="services">
-    <Title>Services</Title>
+    <BaseTitle>Services</BaseTitle>
     <div class="services-container">
-      <Card v-for="service in services" :key="service.title">
+      <BaseCard v-for="service in services" :key="service.title">
         <img
           :src="service.img"
           :alt="service.title"
           class="card-img"
           loading="lazy"
         />
-        <Title tag="h2" class="card-title">{{ service.title }}</Title>
+        <BaseTitle tag="h2" class="card-title">{{ service.title }}</BaseTitle>
         <p>{{ service.desc }}</p>
-        <Button class="card-btn" type="decor">
+        <BaseButton class="card-btn" type="decor">
           <img :src="dollarIcon" alt="" loading="lazy" />
           {{ service.price }}
-        </Button>
-      </Card>
+        </BaseButton>
+      </BaseCard>
     </div>
   </section>
 </template>
 
 <script setup>
-import Title from '@/components/ui/Title.vue'
-import Card from '@/components/ui/Card.vue'
-import Button from '@/components/ui/Button.vue'
+import BaseTitle from '@/components/ui/BaseTitle.vue'
+import BaseCard from '@/components/ui/BaseCard.vue'
+import BaseButton from '@/components/ui/BaseButton.vue'
 
 import basicImg from '@/assets/2_basic.jpg'
 import fullImg from '@/assets/3_full.jpg'

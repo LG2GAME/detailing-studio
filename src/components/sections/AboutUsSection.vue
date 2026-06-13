@@ -1,6 +1,6 @@
 <template>
   <section class="about-us" id="about-us">
-    <Title>About us</Title>
+    <BaseTitle>About us</BaseTitle>
     <div class="about-us-container">
       <div class="about-us-content">
         <h1>
@@ -31,7 +31,7 @@
 </template>
 
 <script setup>
-import Title from '@/components/ui/Title.vue'
+import BaseTitle from '@/components/ui/BaseTitle.vue'
 </script>
 
 <style lang="scss" scoped>

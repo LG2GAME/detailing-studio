@@ -1,19 +1,19 @@
 <template>
   <section class="book-now" id="book-now">
-    <Title>Book Now</Title>
+    <BaseTitle>Book Now</BaseTitle>
     <div class="book-now-content">
       <h1>Transform your vehicle with expert detailing services.</h1>
-      <Button type="button" href="https://bookme.now"
+      <BaseButton type="button" href="https://bookme.now"
         ><img src="@/assets/calendar.svg" alt="" loading="lazy" /> Book a visit
-        today</Button
+        today</BaseButton
       >
     </div>
   </section>
 </template>
 
 <script setup>
-import Title from '@/components/ui/Title.vue'
-import Button from '@/components/ui/Button.vue'
+import BaseTitle from '@/components/ui/BaseTitle.vue'
+import BaseButton from '@/components/ui/BaseButton.vue'
 </script>
 
 <style lang="scss" scoped>

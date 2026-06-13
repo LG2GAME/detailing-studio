@@ -7,16 +7,16 @@
         in turning tired, neglected vehicles into stunning, protected machines
         that turn heads everywhere you go.
       </p>
-      <Button type="button" href="https://bookme.now">
+      <BaseButton type="button" href="https://bookme.now">
         <img src="@/assets/calendar.svg" alt="" loading="lazy" /> Get
         appointment
-      </Button>
+      </BaseButton>
     </div>
   </section>
 </template>
 
 <script setup>
-import Button from '@/components/ui/Button.vue'
+import BaseButton from '@/components/ui/BaseButton.vue'
 </script>
 
 <style lang="scss" scoped>

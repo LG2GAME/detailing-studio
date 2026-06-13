@@ -20,14 +20,14 @@
       class="gallery-handle-button"
       @click="snapToCenter"
     >
-      <Button type="reset">Center</Button>
+      <BaseButton type="reset">Center</BaseButton>
     </div>
   </div>
 </template>
 
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import Button from '@/components/ui/Button.vue'
+import BaseButton from '@/components/ui/BaseButton.vue'
 
 const position = ref(50)
 const container = ref(null)
