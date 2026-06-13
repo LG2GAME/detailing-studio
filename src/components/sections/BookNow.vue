@@ -25,7 +25,7 @@ import Button from '@/components/ui/Button.vue'
   position: relative;
 
   &::after {
-    background: url('@/assets/8_book.jpg') center / cover no-repeat;
+    background: url('@/assets/8_book.webp') center / cover no-repeat;
     content: '';
     filter: blur(4px);
     inset: 0;

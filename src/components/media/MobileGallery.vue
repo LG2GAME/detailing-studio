@@ -1,11 +1,11 @@
 <template>
   <div class="gallery-container">
     <div class="gallery-before">
-      <img src="@/assets/5_gallery.jpg" alt="" />
+      <img src="@/assets/5_gallery.webp" alt="" />
       <h2>Before</h2>
     </div>
     <div class="gallery-after">
-      <img src="@/assets/6_gallery.jpg" alt="" />
+      <img src="@/assets/6_gallery.webp" alt="" />
       <h2>After</h2>
     </div>
   </div>

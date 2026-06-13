@@ -55,9 +55,9 @@
   }
 
   &::after {
-    background: url('@/assets/1_hero.jpg') right center / 35% no-repeat;
+    background: url('@/assets/1_hero.webp') right center / 35% no-repeat;
     content: '';
-    filter: blur(3px);
+    filter: blur(2.25px);
     inset: 0;
     position: absolute;
     z-index: -1;
