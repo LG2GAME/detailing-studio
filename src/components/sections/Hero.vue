@@ -8,7 +8,8 @@
         that turn heads everywhere you go.
       </p>
       <Button type="button" href="https://bookme.now">
-        <img src="@/assets/calendar.svg" alt="" /> Get appointment
+        <img src="@/assets/calendar.svg" alt="" loading="lazy" /> Get
+        appointment
       </Button>
     </div>
   </section>

@@ -4,7 +4,8 @@
     <div class="book-now-content">
       <h1>Transform your vehicle with expert detailing services.</h1>
       <Button type="button" href="https://bookme.now"
-        ><img src="@/assets/calendar.svg" alt="" /> Book a visit today</Button
+        ><img src="@/assets/calendar.svg" alt="" loading="lazy" /> Book a visit
+        today</Button
       >
     </div>
   </section>

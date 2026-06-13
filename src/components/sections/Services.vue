@@ -3,11 +3,16 @@
     <Title>Services</Title>
     <div class="services-container">
       <Card v-for="service in services" :key="service.title">
-        <img :src="service.img" :alt="service.title" class="card-img" />
+        <img
+          :src="service.img"
+          :alt="service.title"
+          class="card-img"
+          loading="lazy"
+        />
         <Title tag="h2" class="card-title">{{ service.title }}</Title>
         <p>{{ service.desc }}</p>
         <Button class="card-btn" type="decor">
-          <img :src="dollarIcon" alt="" />
+          <img :src="dollarIcon" alt="" loading="lazy" />
           {{ service.price }}
         </Button>
       </Card>

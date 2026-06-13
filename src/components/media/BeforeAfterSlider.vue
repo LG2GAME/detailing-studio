@@ -1,8 +1,18 @@
 <template>
   <div class="gallery-container" ref="container" @mousedown="start">
-    <img class="gallery-after" src="@/assets/6_gallery.webp" alt="" />
+    <img
+      class="gallery-after"
+      src="@/assets/6_gallery.webp"
+      alt="Gallery after image"
+      loading="lazy"
+    />
     <div class="gallery-before-wrapper" :style="{ width: position + '%' }">
-      <img class="gallery-before" src="@/assets/5_gallery.webp" alt="" />
+      <img
+        class="gallery-before"
+        src="@/assets/5_gallery.webp"
+        alt="Gallery before image"
+        loading="lazy"
+      />
     </div>
     <div class="gallery-handle" :style="{ left: position + '%' }"></div>
     <div
