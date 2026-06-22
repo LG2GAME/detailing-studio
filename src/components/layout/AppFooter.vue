@@ -16,17 +16,29 @@
         <ul class="footer-info-social">
           <li>
             <a href="https://www.whatsapp.com/" target="_blank"
-              ><img src="@/assets/whatsapp.svg" alt="Whatsapp"
+              ><img
+                src="@/assets/whatsapp.svg"
+                alt="Whatsapp"
+                loading="lazy"
+                decoding="async"
             /></a>
           </li>
           <li>
             <a href="https://instagram.com/" target="_blank"
-              ><img src="@/assets/instagram.svg" alt="Instagram"
+              ><img
+                src="@/assets/instagram.svg"
+                alt="Instagram"
+                loading="lazy"
+                decoding="async"
             /></a>
           </li>
           <li>
             <a href="https://www.facebook.com/" target="_blank"
-              ><img src="@/assets/facebook.svg" alt="Facebook"
+              ><img
+                src="@/assets/facebook.svg"
+                alt="Facebook"
+                loading="lazy"
+                decoding="async"
             /></a>
           </li>
         </ul>

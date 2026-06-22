@@ -8,11 +8,12 @@
           :alt="service.title"
           class="card-img"
           loading="lazy"
+          decoding="async"
         />
         <BaseTitle tag="h2" class="card-title">{{ service.title }}</BaseTitle>
         <p>{{ service.desc }}</p>
         <BaseButton class="card-btn" type="decor">
-          <img :src="dollarIcon" alt="" loading="lazy" />
+          <img :src="dollarIcon" alt="" loading="lazy" decoding="async" />
           {{ service.price }}
         </BaseButton>
       </BaseCard>

@@ -5,6 +5,7 @@
         src="@/assets/5_gallery.webp"
         alt="Gallery before image"
         loading="lazy"
+        decoding="async"
       />
       <h2>Before</h2>
     </div>
@@ -13,6 +14,7 @@
         src="@/assets/6_gallery.webp"
         alt="Gallery after image"
         loading="lazy"
+        decoding="async"
       />
       <h2>After</h2>
     </div>

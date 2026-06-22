@@ -8,7 +8,7 @@
         that turn heads everywhere you go.
       </p>
       <BaseButton type="button" href="https://bookme.now">
-        <img src="@/assets/calendar.svg" alt="" loading="lazy" /> Get
+        <img src="@/assets/calendar.svg" alt="" decoding="async" /> Get
         appointment
       </BaseButton>
     </div>

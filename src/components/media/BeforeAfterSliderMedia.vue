@@ -5,6 +5,7 @@
       src="@/assets/6_gallery.webp"
       alt="Gallery after image"
       loading="lazy"
+      decoding="async"
     />
     <div class="gallery-before-wrapper" :style="{ width: position + '%' }">
       <img
@@ -12,6 +13,7 @@
         src="@/assets/5_gallery.webp"
         alt="Gallery before image"
         loading="lazy"
+        decoding="async"
       />
     </div>
     <div class="gallery-handle" :style="{ left: position + '%' }"></div>
