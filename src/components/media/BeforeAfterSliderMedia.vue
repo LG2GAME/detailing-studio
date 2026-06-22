@@ -25,7 +25,6 @@ import { onBeforeUnmount, onMounted, ref } from 'vue'
 
 const position = ref(50)
 const container = ref(null)
-container.value = undefined
 
 const isDragging = ref(false)
 const isSnapping = ref(false)
