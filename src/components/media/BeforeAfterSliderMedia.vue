@@ -15,19 +15,11 @@
       />
     </div>
     <div class="gallery-handle" :style="{ left: position + '%' }"></div>
-    <div
-      v-if="position !== 50"
-      class="gallery-handle-button"
-      @click="snapToCenter"
-    >
-      <BaseButton type="reset">Center</BaseButton>
-    </div>
   </div>
 </template>
 
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import BaseButton from '@/components/ui/BaseButton.vue'
 
 const position = ref(50)
 const container = ref(null)
@@ -58,17 +50,6 @@ const move = (position) => {
 
 const stop = () => {
   isDragging.value = false
-}
-
-const snapToCenter = () => {
-  isDragging.value = false
-  isSnapping.value = true
-
-  position.value = 50
-
-  requestAnimationFrame(() => {
-    isSnapping.value = false
-  })
 }
 
 onMounted(() => {
@@ -114,13 +95,6 @@ onBeforeUnmount(() => {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 4px;
-
-    &-button {
-      bottom: 0;
-      left: 50%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-    }
 
     &::after {
       background-color: #fff;

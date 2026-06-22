@@ -12,10 +12,6 @@
   <div v-else-if="type === 'decor'" class="btn btn-decor">
     <slot />
   </div>
-
-  <div v-else-if="type === 'reset'" class="btn btn-gallery-reset">
-    <slot />
-  </div>
 </template>
 
 <script setup>
@@ -44,14 +40,6 @@ defineProps({
   &-decor {
     cursor: default;
     font-size: var(--fs-medium);
-    font-weight: 600;
-  }
-
-  &-gallery-reset {
-    border: 3px solid var(--cl-white);
-    padding: 5px 10px;
-    background-color: rgba(255, 255, 255, 0.4);
-    font-size: var(--fs-small);
     font-weight: 600;
   }
 }
