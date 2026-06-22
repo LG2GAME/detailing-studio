@@ -25,9 +25,9 @@ import BaseTitle from '@/components/ui/BaseTitle.vue'
 import BaseCard from '@/components/ui/BaseCard.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
 
-import basicImg from '@/assets/2_basic.jpg'
-import fullImg from '@/assets/3_full.jpg'
-import deepImg from '@/assets/4_deep.jpg'
+import basicImg from '@/assets/2_basic.webp'
+import fullImg from '@/assets/3_full.webp'
+import deepImg from '@/assets/4_deep.webp'
 import dollarIcon from '@/assets/dollar.svg'
 
 const services = [
