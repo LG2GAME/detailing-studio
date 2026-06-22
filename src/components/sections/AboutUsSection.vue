@@ -46,6 +46,10 @@ import BaseTitle from '@/components/ui/BaseTitle.vue'
     display: flex;
     place-items: center;
     gap: 40px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &-content {
@@ -53,6 +57,10 @@ import BaseTitle from '@/components/ui/BaseTitle.vue'
     gap: 40px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
 
     &-desc {
       display: flex;
@@ -70,24 +78,17 @@ import BaseTitle from '@/components/ui/BaseTitle.vue'
     display: inline-flex;
     place-content: center;
 
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
     video {
-      max-width: 100%;
+      width: 60%;
       height: auto;
-    }
-  }
-}
 
-@media (max-width: 768px) {
-  .about-us {
-    &-container {
-      flex-direction: column;
-    }
-
-    &-content {
-      width: 100%;
-    }
-    &-media {
-      width: 100%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 }

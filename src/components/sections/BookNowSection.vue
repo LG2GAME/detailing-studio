@@ -33,6 +33,10 @@ import BaseButton from '@/components/ui/BaseButton.vue'
     opacity: 0.75;
     position: absolute;
     z-index: -1;
+
+    @media (max-width: 576px) {
+      background-position: left center;
+    }
   }
 
   &-content {
@@ -44,22 +48,12 @@ import BaseButton from '@/components/ui/BaseButton.vue'
     place-items: center;
     text-align: center;
     width: 50%;
-  }
-}
 
-@media (max-width: 768px) {
-  .book-now-content {
-    width: 80%;
-  }
-}
-
-@media (max-width: 576px) {
-  .book-now {
-    &::after {
-      background-position: left center;
+    @media (max-width: 768px) {
+      width: 80%;
     }
 
-    &-content {
+    @media (max-width: 576px) {
       width: 100%;
     }
   }

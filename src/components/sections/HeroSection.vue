@@ -34,6 +34,10 @@ import BaseButton from '@/components/ui/BaseButton.vue'
     position: absolute;
     width: 100%;
     z-index: -1;
+
+    @media (max-width: 768px) {
+      opacity: 0.75;
+    }
   }
 
   &-content {
@@ -41,12 +45,6 @@ import BaseButton from '@/components/ui/BaseButton.vue'
     flex-direction: column;
     gap: 40px;
     width: min(100%, 40rem);
-  }
-}
-
-@media (max-width: 768px) {
-  .hero::after {
-    opacity: 0.75;
   }
 }
 </style>

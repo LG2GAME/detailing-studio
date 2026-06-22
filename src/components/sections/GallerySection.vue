@@ -39,10 +39,8 @@ onBeforeUnmount(() => {
   height: 100vh;
   place-items: center;
   width: 100%;
-}
 
-@media (max-width: 768px) {
-  .gallery {
+  @media (max-width: 768px) {
     height: 100%;
   }
 }

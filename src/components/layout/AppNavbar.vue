@@ -49,12 +49,21 @@ onBeforeUnmount(() => {
   width: 100%;
   z-index: 99;
 
+  .logo {
+    z-index: 99;
+  }
+
   .burger {
     cursor: pointer;
     display: none;
     flex-direction: column;
     gap: 8px;
     width: 45px;
+    z-index: 99;
+
+    @media (max-width: 992px) {
+      display: flex;
+    }
 
     span {
       background-color: var(--cl-white);
@@ -70,26 +79,7 @@ onBeforeUnmount(() => {
     gap: 25px;
     list-style-type: none;
 
-    li {
-      font-size: var(--fs-small);
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .navbar {
-    .burger {
-      display: flex;
-    }
-
-    .burger,
-    .logo {
-      z-index: 99;
-    }
-
-    ul {
+    @media (max-width: 992px) {
       align-items: center;
       background-color: var(--cl-black);
       flex-direction: column;
@@ -105,8 +95,14 @@ onBeforeUnmount(() => {
       &.active {
         transform: translateX(0);
       }
+    }
 
-      li {
+    li {
+      font-size: var(--fs-small);
+      text-transform: uppercase;
+      cursor: pointer;
+
+      @media (max-width: 992px) {
         font-size: var(--fs-medium);
         font-weight: 700;
       }
