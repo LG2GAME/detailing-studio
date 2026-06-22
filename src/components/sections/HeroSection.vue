@@ -12,6 +12,15 @@
         appointment
       </BaseButton>
     </div>
+    <img
+      src="@/assets/1_hero.webp"
+      alt="Car detailing studio image"
+      class="hero-background"
+      decoding="async"
+      fetchpriority="high"
+      width="2732"
+      height="4096"
+    />
   </section>
 </template>
 
@@ -21,18 +30,19 @@ import BaseButton from '@/components/ui/BaseButton.vue'
 
 <style lang="scss" scoped>
 .hero {
-  place-items: center;
   display: flex;
   min-height: 100vh;
+  place-items: center;
   position: relative;
 
-  &::after {
-    background: url('@/assets/1_hero.webp') right center / contain no-repeat;
-    content: '';
-    filter: blur(2.25px);
+  &-background {
+    filter: blur(1.5px);
+    height: 100%;
     inset: 0 0 0 auto;
+    max-width: 100%;
+    object-fit: contain;
     position: absolute;
-    width: 100%;
+    width: auto;
     z-index: -1;
 
     @media (max-width: 768px) {
