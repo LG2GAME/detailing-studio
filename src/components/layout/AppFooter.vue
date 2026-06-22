@@ -57,29 +57,13 @@
 .footer {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  margin-top: 40px;
   padding: 25px 40px;
   position: relative;
-  margin-top: 40px;
+  width: 100%;
 
   section {
     padding: 0;
-  }
-
-  &::after {
-    background: url('@/assets/1_hero.webp') right center / 35% no-repeat;
-    content: '';
-    filter: blur(2.25px);
-    inset: 0;
-    position: absolute;
-    z-index: -1;
-
-    @media (max-width: 992px) {
-      background-size: contain;
-    }
-    @media (max-width: 768px) {
-      background: none;
-    }
   }
 
   &-info {
