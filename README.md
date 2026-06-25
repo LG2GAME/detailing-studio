@@ -1,86 +1,129 @@
-# Detailing Studio - Pawel Wnek
+# 🚗 Detailing Studio — Paweł Wnek
 
-## Content of Project
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Project Status](#project-status)
-* [Support](#support)
-* [License](#license)
+> A modern single-page web application for a professional car detailing studio. Built to boost online visibility and streamline appointment booking for customers.
 
 ---
 
-## General info
+## 📋 Table of Contents
 
-**Detailing Studio - Pawel Wnek** is a *single-page web application* currently under development. The project is focused on supporting business growth by increasing online visibility and making it easier for customers to schedule appointments.
-
-The website is designed as a modern, simple, and user-friendly presentation of detailing services, with emphasis on clarity and accessibility.
-
-The application consists of the following main sections:
-
-* **Main** – introductory section presenting the studio and its core message
-* **Services** – overview of available detailing services
-* **Gallery** – visual presentation of completed work
-* **About Us** – general information about the company
-* **Book Now** – section dedicated to appointment booking
-* **Contact** – contact information and basic inquiry options
+- [About the Project](#about-the-project)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Scripts](#scripts)
+- [Project Status](#project-status)
+- [License](#license)
 
 ---
 
-## Technologies
+## About the Project
 
-* Vue 3
-* Vite
-* Node.js
+**Detailing Studio — Paweł Wnek** is a responsive, single-page web application currently under active development. The goal is to present the studio's services in a clean, professional way while making it easy for customers to get in touch and book appointments online.
+
+### Sections
+
+| Section | Description |
+|---|---|
+| **Main** | Hero area with the studio's core message |
+| **Services** | Overview of available detailing packages |
+| **Gallery** | Visual showcase of completed work |
+| **About Us** | Background and story of the studio |
+| **Book Now** | Appointment booking functionality |
+| **Contact** | Contact details and inquiry form |
 
 ---
 
-## Setup
+## Tech Stack
 
-### Install dependencies:
+| Technology | Purpose |
+|---|---|
+| [Vue 3](https://vuejs.org/) | Frontend framework (Composition API) |
+| [Vite](https://vitejs.dev/) | Build tool & dev server |
+| [SCSS](https://sass-lang.com/) | Styling |
+| [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) | Code linting & formatting |
+| [Husky](https://typicode.github.io/husky/) + [lint-staged](https://github.com/okonet/lint-staged) | Pre-commit hooks |
+| Node.js `^20.19.0 \|\| >=22.12.0` | Runtime requirement |
 
-To install all required dependencies, run the following command:
+---
+
+## Project Structure
+
+```
+detailing-studio/
+├── src/               # Application source code
+├── index.html         # Entry HTML file
+├── vite.config.js     # Vite configuration
+├── eslint.config.js   # ESLint configuration
+├── .prettierrc        # Prettier configuration
+├── .husky/            # Git hooks
+└── package.json
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have a compatible version of Node.js installed:
+
+```
+node --version  # must be ^20.19.0 or >=22.12.0
+```
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/LG2GAME/detailing-studio.git
+cd detailing-studio
+```
+
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-### Run the project locally:
-
-To start the application in development mode, use the command:
+3. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-The application will be available at:<br/>
-http://localhost:5173
+The app will be available at **http://localhost:5173**
 
-### Build for production:
+---
 
-To create a production-ready build, run:
-```bash
-npm run build
-```
+## Scripts
 
-The production files will be generated in the dist/ folder, ready for deployment.
+| Command | Description |
+|---|---|
+| `npm run dev` | Start local development server |
+| `npm run build` | Create production build (output: `dist/`) |
+| `npm run preview` | Preview the production build locally |
 
 ---
 
 ## Project Status
 
-The project is currently in early development. The main structure of the application is being set up, including core layout, routing, and initial views.
+🟡 **In active development**
 
-At this stage, work is focused on building the foundation of the UI and preparing the application for further feature implementation, such as service presentation, gallery, and booking functionality.
-
-Future updates will include expanding functionality, improving UI/UX, and integrating a booking system for appointments.
-
----
-
-## Support
-The application is currently under development. If you have any questions regarding functionality, project progress, or require any changes, please contact us.
+Currently working on:
+- [x] Project setup (Vite, Vue 3, SCSS, ESLint, Prettier, Husky)
+- [x] Core application structure and routing
+- [ ] Service presentation section
+- [ ] Gallery implementation
+- [ ] Booking system integration
+- [ ] UI/UX refinements and accessibility improvements
 
 ---
 
 ## License
-The application was created for project purposes and is the property of its author. The source code is available exclusively for support and maintenance purposes unless otherwise specified in a separate agreement.
+
+This project was created for commercial purposes and remains the intellectual property of its author. The source code is available solely for support and maintenance use unless otherwise agreed upon in a separate written agreement.
+
+---
+
+*Built with ❤️ for Detailing Studio — Pawel Wnek*
