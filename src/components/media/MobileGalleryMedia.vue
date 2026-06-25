@@ -50,8 +50,8 @@
       margin: 0 0 20px 20px;
       text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 
-      @media (max-width: var(--bp-small)) {
-        font-size: var(--fs-small);
+      @media (max-width: $bp-small) {
+        font-size: $fs-small;
         margin: 0 0 10px 10px;
       }
     }
