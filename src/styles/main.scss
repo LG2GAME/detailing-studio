@@ -25,7 +25,8 @@ h2 {
   text-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
 }
 
-p, li {
+p,
+li {
   font-weight: 500;
   font-size: var(--fs-small);
   line-height: 180%;
@@ -33,5 +34,5 @@ p, li {
 
 a {
   text-decoration: none;
-  color: var(--cl-white);;
+  color: var(--cl-white);
 }
