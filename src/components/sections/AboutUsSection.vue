@@ -47,7 +47,7 @@ import BaseTitle from '@/components/ui/BaseTitle.vue'
     place-items: center;
     gap: 40px;
 
-    @media (max-width: 768px) {
+    @media (max-width: var(--bp-medium)) {
       flex-direction: column;
     }
   }
@@ -58,7 +58,7 @@ import BaseTitle from '@/components/ui/BaseTitle.vue'
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 768px) {
+    @media (max-width: var(--bp-medium)) {
       width: 100%;
     }
 
@@ -78,7 +78,7 @@ import BaseTitle from '@/components/ui/BaseTitle.vue'
     display: inline-flex;
     place-content: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: var(--bp-medium)) {
       width: 100%;
     }
 
@@ -86,7 +86,7 @@ import BaseTitle from '@/components/ui/BaseTitle.vue'
       width: 60%;
       height: auto;
 
-      @media (max-width: 768px) {
+      @media (max-width: var(--bp-medium)) {
         width: 100%;
       }
     }

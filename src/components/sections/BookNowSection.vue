@@ -39,7 +39,7 @@ import BaseButton from '@/components/ui/BaseButton.vue'
     position: absolute;
     z-index: -1;
 
-    @media (max-width: 576px) {
+    @media (max-width: var(--bp-small)) {
       background-position: left center;
     }
   }
@@ -54,11 +54,11 @@ import BaseButton from '@/components/ui/BaseButton.vue'
     text-align: center;
     width: 50%;
 
-    @media (max-width: 768px) {
+    @media (max-width: var(--bp-medium)) {
       width: 80%;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: var(--bp-small)) {
       width: 100%;
     }
   }

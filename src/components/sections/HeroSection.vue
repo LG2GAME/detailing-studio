@@ -45,7 +45,7 @@ import BaseButton from '@/components/ui/BaseButton.vue'
     width: auto;
     z-index: -1;
 
-    @media (max-width: 768px) {
+    @media (max-width: var(--bp-medium)) {
       opacity: 0.75;
     }
   }

@@ -61,7 +61,7 @@ onBeforeUnmount(() => {
     width: 45px;
     z-index: 99;
 
-    @media (max-width: 992px) {
+    @media (max-width: var(--bp-large)) {
       display: flex;
     }
 
@@ -79,7 +79,7 @@ onBeforeUnmount(() => {
     gap: 25px;
     list-style-type: none;
 
-    @media (max-width: 992px) {
+    @media (max-width: var(--bp-large)) {
       align-items: center;
       background-color: var(--cl-black);
       flex-direction: column;
@@ -102,7 +102,7 @@ onBeforeUnmount(() => {
       text-transform: uppercase;
       cursor: pointer;
 
-      @media (max-width: 992px) {
+      @media (max-width: var(--bp-large)) {
         font-size: var(--fs-medium);
         font-weight: 700;
       }
