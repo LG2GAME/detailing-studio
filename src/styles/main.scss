@@ -1,10 +1,10 @@
-@use 'reset';
-@use 'variables';
+@use '_reset';
+@use '_variables';
 
 body {
-  font-family: var(--ff-montserrat), sans-serif;
-  background-color: var(--cl-black);
-  color: var(--cl-white);
+  font-family: $ff-montserrat, sans-serif;
+  background-color: $cl-black;
+  color: $cl-white;
 }
 
 section {
@@ -13,14 +13,14 @@ section {
 
 h1 {
   font-weight: 700;
-  font-size: var(--fs-big);
+  font-size: $fs-big;
   text-transform: uppercase;
   text-shadow: 0 2px 8px rgba(255, 255, 255, 0.55);
 }
 
 h2 {
   font-weight: 700;
-  font-size: var(--fs-medium);
+  font-size: $fs-medium;
   text-transform: uppercase;
   text-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
 }
@@ -28,11 +28,11 @@ h2 {
 p,
 li {
   font-weight: 500;
-  font-size: var(--fs-small);
+  font-size: $fs-small;
   line-height: 180%;
 }
 
 a {
   text-decoration: none;
-  color: var(--cl-white);
+  color: $cl-white;
 }

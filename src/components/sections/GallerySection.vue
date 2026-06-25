@@ -40,7 +40,7 @@ onBeforeUnmount(() => {
   place-items: center;
   width: 100%;
 
-  @media (max-width: var(--bp-medium)) {
+  @media (max-width: $bp-medium) {
     height: 100%;
   }
 }

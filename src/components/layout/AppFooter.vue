@@ -71,7 +71,7 @@
     width: 70%;
     gap: 40px;
 
-    @media (max-width: var(--bp-large)) {
+    @media (max-width: $bp-large) {
       flex-direction: column;
       width: 100%;
     }
@@ -79,7 +79,7 @@
     &-hero {
       width: 70%;
 
-      @media (max-width: var(--bp-medium)) {
+      @media (max-width: $bp-medium) {
         width: 100%;
       }
     }
@@ -88,7 +88,7 @@
       list-style-type: none;
       width: 30%;
 
-      @media (max-width: var(--bp-large)) {
+      @media (max-width: $bp-large) {
         width: 100%;
       }
     }
@@ -109,17 +109,17 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: var(--bp-large)) {
+    @media (max-width: $bp-large) {
       flex-direction: column;
       margin-top: 20px;
     }
 
     p {
-      color: var(--cl-graphite);
+      color: $cl-graphite;
     }
 
     span {
-      color: var(--cl-white);
+      color: $cl-white;
       font-weight: 700;
     }
   }

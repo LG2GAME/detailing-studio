@@ -1,17 +1,18 @@
 <template>
   <nav class="navbar">
     <h2 class="logo">Pawel Wnek</h2>
-    <button
+    <div
       class="burger"
       @click="toggleMenu"
       aria-label="Toggle navigation menu"
       :aria-expanded="isOpen"
       aria-controls="main-navigation"
+      role="button"
     >
       <span></span>
       <span></span>
       <span></span>
-    </button>
+    </div>
     <ul
       id="main-navigation"
       :class="{ active: isOpen }"
@@ -58,10 +59,10 @@ onBeforeUnmount(() => {
 <style lang="scss" scoped>
 .navbar {
   align-items: center;
-  background-color: var(--cl-black);
-  border-bottom: 1px solid var(--cl-dim-grey);
+  background-color: $cl-black;
+  border-bottom: 1px solid $cl-dim-grey;
   display: flex;
-  font-family: var(--ff-lato), sans-serif;
+  font-family: $ff-lato, sans-serif;
   justify-content: space-between;
   left: 0;
   padding: 25px 40px;
@@ -82,12 +83,12 @@ onBeforeUnmount(() => {
     width: 45px;
     z-index: 99;
 
-    @media (max-width: var(--bp-large)) {
+    @media (max-width: $bp-large) {
       display: flex;
     }
 
     span {
-      background-color: var(--cl-white);
+      background-color: $cl-white;
       border-radius: 99px;
       height: 5px;
       width: 100%;
@@ -100,9 +101,9 @@ onBeforeUnmount(() => {
     gap: 25px;
     list-style-type: none;
 
-    @media (max-width: var(--bp-large)) {
+    @media (max-width: $bp-large) {
       align-items: center;
-      background-color: var(--cl-black);
+      background-color: $cl-black;
       flex-direction: column;
       height: 100vh;
       justify-content: center;
@@ -119,12 +120,12 @@ onBeforeUnmount(() => {
     }
 
     li {
-      font-size: var(--fs-small);
+      font-size: $fs-small;
       text-transform: uppercase;
       cursor: pointer;
 
-      @media (max-width: var(--bp-large)) {
-        font-size: var(--fs-medium);
+      @media (max-width: $bp-large) {
+        font-size: $fs-medium;
         font-weight: 700;
       }
     }

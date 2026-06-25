@@ -47,7 +47,7 @@ const bookingUrl = import.meta.env.VITE_BOOKING_URL
     width: auto;
     z-index: -1;
 
-    @media (max-width: var(--bp-medium)) {
+    @media (max-width: $bp-medium) {
       opacity: 0.75;
     }
   }

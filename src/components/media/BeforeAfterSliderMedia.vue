@@ -68,8 +68,13 @@ onBeforeUnmount(() => {
   &-container {
     aspect-ratio: 16/9;
     height: 100%;
+    max-width: 100%;
     position: relative;
     user-select: none;
+  }
+
+  &-after {
+    width: 100%;
   }
 
   &-before,
@@ -88,7 +93,7 @@ onBeforeUnmount(() => {
   }
 
   &-handle {
-    background: var(--cl-white);
+    background: $cl-white;
     cursor: ew-resize;
     height: 100%;
     left: 50%;

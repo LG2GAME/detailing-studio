@@ -15,7 +15,7 @@ defineProps({
 
 <style lang="scss" scoped>
 .title {
-  border-bottom: 4px solid var(--cl-graphite);
+  border-bottom: 4px solid $cl-graphite;
   padding: 10px;
   display: inline-block;
 }

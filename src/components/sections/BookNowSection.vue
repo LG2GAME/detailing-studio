@@ -41,7 +41,7 @@ const bookingUrl = import.meta.env.VITE_BOOKING_URL
     position: absolute;
     z-index: -1;
 
-    @media (max-width: var(--bp-small)) {
+    @media (max-width: $bp-small) {
       background-position: left center;
     }
   }
@@ -56,11 +56,11 @@ const bookingUrl = import.meta.env.VITE_BOOKING_URL
     text-align: center;
     width: 50%;
 
-    @media (max-width: var(--bp-medium)) {
+    @media (max-width: $bp-medium) {
       width: 80%;
     }
 
-    @media (max-width: var(--bp-small)) {
+    @media (max-width: $bp-small) {
       width: 100%;
     }
   }

@@ -27,10 +27,10 @@ defineProps({
 <style lang="scss" scoped>
 .btn {
   align-items: center;
-  border: 1px solid var(--cl-white);
+  border: 1px solid $cl-white;
   cursor: pointer;
   display: flex;
-  font-size: var(--fs-small);
+  font-size: $fs-small;
   font-weight: 300;
   gap: 10px;
   padding: 10px 20px;
@@ -39,7 +39,7 @@ defineProps({
 
   &-decor {
     cursor: default;
-    font-size: var(--fs-medium);
+    font-size: $fs-medium;
     font-weight: 600;
   }
 }
