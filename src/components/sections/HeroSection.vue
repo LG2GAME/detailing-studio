@@ -14,7 +14,7 @@
     </div>
     <img
       src="@/assets/1_hero.webp"
-      alt="Car detailing studio image"
+      alt=""
       class="hero-background"
       decoding="async"
       fetchpriority="high"

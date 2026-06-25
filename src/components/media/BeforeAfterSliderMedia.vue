@@ -3,7 +3,7 @@
     <img
       class="gallery-after"
       src="@/assets/6_gallery.webp"
-      alt="Gallery after image"
+      alt="After car detailing results"
       loading="lazy"
       decoding="async"
     />
@@ -11,7 +11,7 @@
       <img
         class="gallery-before"
         src="@/assets/5_gallery.webp"
-        alt="Gallery before image"
+        alt="Before car detailing results"
         loading="lazy"
         decoding="async"
       />
