@@ -1,17 +1,38 @@
 <template>
   <nav class="navbar">
     <h2 class="logo">Pawel Wnek</h2>
-    <div class="burger" @click="toggleMenu" role="button" tabindex="0">
+    <button
+      class="burger"
+      @click="toggleMenu"
+      aria-label="Toggle navigation menu"
+      :aria-expanded="isOpen"
+      aria-controls="main-navigation"
+    >
       <span></span>
       <span></span>
       <span></span>
-    </div>
-    <ul :class="{ active: isOpen }">
-      <li @click="isOpen = false"><a href="#services">Services</a></li>
-      <li @click="isOpen = false"><a href="#gallery">Gallery</a></li>
-      <li @click="isOpen = false"><a href="#about-us">About us</a></li>
-      <li @click="isOpen = false"><a href="#book-now">Book now</a></li>
-      <li @click="isOpen = false"><a href="#contact">Contact</a></li>
+    </button>
+    <ul
+      id="main-navigation"
+      :class="{ active: isOpen }"
+      role="menubar"
+      :aria-hidden="!isOpen"
+    >
+      <li @click="isOpen = false">
+        <a href="#services" role="menuitem">Services</a>
+      </li>
+      <li @click="isOpen = false">
+        <a href="#gallery" role="menuitem">Gallery</a>
+      </li>
+      <li @click="isOpen = false">
+        <a href="#about-us" role="menuitem">About us</a>
+      </li>
+      <li @click="isOpen = false">
+        <a href="#book-now" role="menuitem">Book now</a>
+      </li>
+      <li @click="isOpen = false">
+        <a href="#contact" role="menuitem">Contact</a>
+      </li>
     </ul>
   </nav>
 </template>
