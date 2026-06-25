@@ -3,7 +3,7 @@
     <BaseTitle>Book Now</BaseTitle>
     <div class="book-now-content">
       <h1>Transform your vehicle with expert detailing services.</h1>
-      <BaseButton type="button" href="https://bookme.now"
+      <BaseButton type="button" :href="bookingUrl"
         ><img
           src="@/assets/calendar.svg"
           alt=""
@@ -19,6 +19,8 @@
 <script setup>
 import BaseTitle from '@/components/ui/BaseTitle.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
+
+const bookingUrl = import.meta.env.VITE_BOOKING_URL
 </script>
 
 <style lang="scss" scoped>

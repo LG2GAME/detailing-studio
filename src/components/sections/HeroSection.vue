@@ -7,7 +7,7 @@
         in turning tired, neglected vehicles into stunning, protected machines
         that turn heads everywhere you go.
       </p>
-      <BaseButton type="button" href="https://bookme.now">
+      <BaseButton type="button" :href="bookingUrl">
         <img src="@/assets/calendar.svg" alt="" decoding="async" /> Get
         appointment
       </BaseButton>
@@ -26,6 +26,8 @@
 
 <script setup>
 import BaseButton from '@/components/ui/BaseButton.vue'
+
+const bookingUrl = import.meta.env.VITE_BOOKING_URL
 </script>
 
 <style lang="scss" scoped>
