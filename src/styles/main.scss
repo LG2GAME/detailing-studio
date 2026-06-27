@@ -9,6 +9,10 @@ body {
 
 section {
   padding: 25px 40px;
+
+  @media (max-width: $bp-small) {
+    padding: 25px 20px;
+  }
 }
 
 h1 {
