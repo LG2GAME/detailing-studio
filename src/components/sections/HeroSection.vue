@@ -14,12 +14,12 @@
     </div>
     <img
       src="@/assets/1_hero.webp"
-      alt=""
+      alt="Professional car detailing studio with luxury vehicles in premium workshop"
       class="hero-background"
       decoding="async"
       fetchpriority="high"
-      width="2732"
-      height="4096"
+      width="854"
+      height="1200"
     />
   </section>
 </template>

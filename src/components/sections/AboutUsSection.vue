@@ -22,7 +22,16 @@
         </div>
       </div>
       <div class="about-us-media">
-        <video autoPlay loop muted playsInline>
+        <video
+          aria-label="Professional car detailing studio with luxury vehicles in premium
+        workshop"
+          autoPlay
+          loop
+          muted
+          playsInline
+          width="405"
+          height="720"
+        >
           <source src="@/assets/7_team.mp4" />
         </video>
       </div>

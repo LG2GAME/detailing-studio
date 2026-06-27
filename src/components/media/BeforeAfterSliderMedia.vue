@@ -3,17 +3,21 @@
     <img
       class="gallery-after"
       src="@/assets/6_gallery.webp"
-      alt="After car detailing results"
+      alt="Car after professional detailing and ceramic coating"
       loading="lazy"
       decoding="async"
+      width="1280"
+      height="720"
     />
     <div class="gallery-before-wrapper" :style="{ width: position + '%' }">
       <img
         class="gallery-before"
         src="@/assets/5_gallery.webp"
-        alt="Before car detailing results"
+        alt="Car before professional detailing service"
         loading="lazy"
         decoding="async"
+        width="1280"
+        height="720"
       />
     </div>
     <div class="gallery-handle" :style="{ left: position + '%' }"></div>
@@ -73,16 +77,13 @@ onBeforeUnmount(() => {
     user-select: none;
   }
 
-  &-after {
-    width: 100%;
-  }
-
   &-before,
   &-after {
     height: 100%;
     inset: 0;
     object-fit: cover;
     position: absolute;
+    width: auto;
   }
 
   &-before-wrapper {

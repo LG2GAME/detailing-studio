@@ -3,18 +3,22 @@
     <div class="gallery-before">
       <img
         src="@/assets/5_gallery.webp"
-        alt="Before car detailing results"
+        alt="Car before professional detailing service"
         loading="lazy"
         decoding="async"
+        width="1280"
+        height="720"
       />
       <h2>Before</h2>
     </div>
     <div class="gallery-after">
       <img
         src="@/assets/6_gallery.webp"
-        alt="After car detailing results"
+        alt="Car after professional detailing and ceramic coating"
         loading="lazy"
         decoding="async"
+        width="1280"
+        height="720"
       />
       <h2>After</h2>
     </div>

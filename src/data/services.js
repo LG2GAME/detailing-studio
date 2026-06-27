@@ -5,18 +5,21 @@ import deepImg from '@/assets/4_deep.webp'
 export const services = [
   {
     img: basicImg,
+    alt: 'Basic car interior cleaning and vacuuming service',
     title: 'Basic interior',
     desc: 'Essential interior cleaning – vacuuming, surface wiping, and dust removal. Ideal for keeping your car tidy on a regular basis.',
     price: '60+'
   },
   {
     img: fullImg,
-    title: 'Full Interior ',
+    alt: 'Full car detailing interior - seats, dashboard and door panels',
+    title: 'Full Interior',
     desc: 'Complete interior refresh including deep vacuuming, shampooing of seats and carpets, and meticulous cleaning of all surfaces for a noticeably cleaner cabin.',
     price: '100+'
   },
   {
     img: deepImg,
+    alt: 'Deep car interior cleaning and leather conditioning',
     title: 'Deep Clean',
     desc: 'Ultimate interior restoration. Deep steam cleaning, intensive stain extraction, full crevice cleaning, and complete odor treatment – bringing even the dirtiest interiors back to life.',
     price: '140+'

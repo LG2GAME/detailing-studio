@@ -5,10 +5,12 @@
       <BaseCard v-for="service in services" :key="service.title">
         <img
           :src="service.img"
-          :alt="service.title"
+          :alt="service.alt"
           class="card-img"
           loading="lazy"
           decoding="async"
+          width="818"
+          height="720"
         />
         <BaseTitle tag="h2" class="card-title">{{ service.title }}</BaseTitle>
         <p>{{ service.desc }}</p>
@@ -42,6 +44,11 @@ import { services } from '@/data/services.js'
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 
     .card {
+      img {
+        width: 100%;
+        height: auto;
+      }
+
       &-title {
         text-align: center;
       }
