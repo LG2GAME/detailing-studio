@@ -25,9 +25,23 @@
 </template>
 
 <script setup>
+import { useHead } from '@unhead/vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
+import heroImageUrl from '@/assets/1_hero.webp'
 
 const bookingUrl = import.meta.env.VITE_BOOKING_URL
+
+useHead({
+  link: [
+    {
+      rel: 'preload',
+      as: 'image',
+      href: heroImageUrl,
+      type: 'image/webp',
+      fetchpriority: 'high'
+    }
+  ]
+})
 </script>
 
 <style lang="scss" scoped>
