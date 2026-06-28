@@ -1,3 +1,4 @@
+import VueCookies from 'vue-cookies'
 import { createApp } from 'vue'
 import { createHead } from '@unhead/vue/client'
 
@@ -9,5 +10,12 @@ const app = createApp(App)
 const head = createHead()
 
 app.use(head)
+app.use(VueCookies, {
+  expire: '365d',
+  path: '/',
+  domain: '',
+  secure: true,
+  sameSite: 'Lax'
+})
 
 app.mount('#app')
