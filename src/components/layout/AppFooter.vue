@@ -2,7 +2,7 @@
   <footer class="footer">
     <section class="footer-info">
       <div class="footer-info-hero">
-        <h2>Pawel Wnek</h2>
+        <h2>Detailing Studio</h2>
         <p>
           Precision detailing that restores and protects your vehicle to a high
           standard. We transform neglected cars into clean, refined machines

@@ -20,12 +20,22 @@ import ServicesSection from '@/components/sections/ServicesSection.vue'
 import AboutUsSection from '@/components/sections/AboutUsSection.vue'
 import BookNowSection from '@/components/sections/BookNowSection.vue'
 import AppFooter from '@/components/layout/AppFooter.vue'
+
 const GallerySection = defineAsyncComponent(
   () => import('@/components/sections/GallerySection.vue')
 )
 
+const siteUrl = import.meta.env.VITE_SITE_URL
+
 useHead({
-  title: 'Pawel Wnek | Professional Car Detailing',
+  title: 'Professional Car Detailing',
+
+  link: [
+    {
+      rel: 'canonical',
+      href: `${siteUrl}/`
+    }
+  ],
 
   meta: [
     {
@@ -40,7 +50,7 @@ useHead({
     },
     {
       property: 'og:title',
-      content: 'Pawel Wnek | Professional Car Detailing'
+      content: 'Professional Car Detailing'
     },
     {
       property: 'og:description',
@@ -65,7 +75,7 @@ useHead({
     },
     {
       name: 'twitter:title',
-      content: 'Pawel Wnek | Professional Car Detailing'
+      content: 'Professional Car Detailing'
     },
     {
       name: 'twitter:description',
