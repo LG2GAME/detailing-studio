@@ -1,39 +1,47 @@
 <template>
-  <nav class="navbar">
-    <h2 class="logo">Pawel Wnek</h2>
-    <div
+  <nav id="main-navigation" class="navbar">
+    <h2 class="logo">Detailing Studio</h2>
+    <button
+      v-if="isMobile"
       class="burger"
       @click="toggleMenu"
       aria-label="Toggle navigation menu"
       :aria-expanded="isOpen"
       aria-controls="main-navigation"
-      role="button"
-      :aria-hidden="isMobile ? 'false' : 'true'"
     >
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
     <ul
       id="main-navigation"
       :class="{ active: isOpen }"
-      role="menubar"
       :aria-hidden="isMobile ? !isOpen : false"
     >
-      <li @click="isOpen = false" role="menuitem">
-        <a href="#services" role="option">Services</a>
+      <li @click="isOpen = false">
+        <a href="#services" :tabindex="isMobile && !isOpen ? '-1' : '0'"
+          >Services</a
+        >
       </li>
-      <li @click="isOpen = false" role="menuitem">
-        <a href="#gallery" role="option">Gallery</a>
+      <li @click="isOpen = false">
+        <a href="#gallery" :tabindex="isMobile && !isOpen ? '-1' : '0'"
+          >Gallery</a
+        >
       </li>
-      <li @click="isOpen = false" role="menuitem">
-        <a href="#about-us" role="option">About us</a>
+      <li @click="isOpen = false">
+        <a href="#about-us" :tabindex="isMobile && !isOpen ? '-1' : '0'"
+          >About us</a
+        >
       </li>
-      <li @click="isOpen = false" role="menuitem">
-        <a href="#book-now" role="option">Book now</a>
+      <li @click="isOpen = false">
+        <a href="#book-now" :tabindex="isMobile && !isOpen ? '-1' : '0'"
+          >Book now</a
+        >
       </li>
-      <li @click="isOpen = false" role="menuitem">
-        <a href="#contact" role="option">Contact</a>
+      <li @click="isOpen = false">
+        <a href="#contact" :tabindex="isMobile && !isOpen ? '-1' : '0'"
+          >Contact</a
+        >
       </li>
     </ul>
   </nav>
@@ -79,16 +87,13 @@ onBeforeUnmount(() => {
   }
 
   .burger {
+    all: unset;
     cursor: pointer;
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 8px;
     width: 45px;
     z-index: 99;
-
-    @media (max-width: $bp-large) {
-      display: flex;
-    }
 
     span {
       background-color: $cl-white;
