@@ -9,7 +9,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "@/styles/_variables.scss" as *;` // ← to jest klucz
+        additionalData: `@use "@/styles/_variables.scss" as *;`
       }
     }
   },
@@ -25,13 +25,15 @@ export default defineConfig({
     }
   },
   build: {
+    sourcemap: false,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['vue']
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor'
+          }
         }
       }
-    },
-    sourcemap: false
+    }
   }
 })
