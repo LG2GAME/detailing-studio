@@ -37,6 +37,9 @@
           /></a>
         </li>
       </ul>
+      <div class="footer-info-police">
+        <a href="/privacy-policy">Privacy Policy</a>
+      </div>
     </section>
     <section class="footer-copyrights">
       <p>Copyright &#169; 2026 <span>Pawel Wnek</span></p>
@@ -62,7 +65,7 @@
 
   &-info {
     display: flex;
-    width: 70%;
+    width: 100%;
     gap: 40px;
 
     @media (max-width: $bp-large) {
@@ -95,6 +98,19 @@
 
       a {
         cursor: pointer;
+      }
+    }
+
+    &-police {
+      width: 30%;
+
+      a {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      @media (max-width: $bp-large) {
+        width: 100%;
       }
     }
   }
