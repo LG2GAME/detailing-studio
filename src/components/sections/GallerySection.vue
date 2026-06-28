@@ -19,7 +19,7 @@ const handleResize = () => {
 }
 
 const currentComponent = computed(() =>
-  innerWidth.value <= 768 ? MobileGalleryMedia : BeforeAfterSliderMedia
+  innerWidth.value <= 992 ? MobileGalleryMedia : BeforeAfterSliderMedia
 )
 
 onMounted(() => {
@@ -36,9 +36,12 @@ onBeforeUnmount(() => {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  height: 100vh;
   place-items: center;
   width: 100%;
+
+  @media (min-width: $bp-large) {
+    height: 100vh;
+  }
 
   @media (max-width: $bp-medium) {
     height: 100%;

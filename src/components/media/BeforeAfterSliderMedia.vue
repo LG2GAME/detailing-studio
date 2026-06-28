@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
 <style lang="scss" scoped>
 .gallery {
   &-container {
-    aspect-ratio: 1280/789;
+    aspect-ratio: 688/424;
     height: 100%;
     max-width: 100%;
     position: relative;
