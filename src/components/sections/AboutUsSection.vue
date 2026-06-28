@@ -29,8 +29,8 @@
           loop
           muted
           playsInline
-          width="405"
-          height="720"
+          width="396"
+          height="704"
         >
           <source src="@/assets/7_team.mp4" />
         </video>

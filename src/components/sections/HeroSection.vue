@@ -18,8 +18,8 @@
       class="hero-background"
       decoding="async"
       fetchpriority="high"
-      width="854"
-      height="1200"
+      width="627"
+      height="940"
     />
   </section>
 </template>

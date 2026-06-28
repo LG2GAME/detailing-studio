@@ -9,8 +9,8 @@
           class="card-img"
           loading="lazy"
           decoding="async"
-          width="818"
-          height="720"
+          width="427"
+          height="375"
         />
         <BaseTitle tag="h2" class="card-title">{{ service.title }}</BaseTitle>
         <p>{{ service.desc }}</p>

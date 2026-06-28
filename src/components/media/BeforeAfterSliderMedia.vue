@@ -6,8 +6,8 @@
       alt="Car after professional detailing and ceramic coating"
       loading="lazy"
       decoding="async"
-      width="1280"
-      height="720"
+      width="688"
+      height="424"
     />
     <div class="gallery-before-wrapper" :style="{ width: position + '%' }">
       <img
@@ -16,8 +16,8 @@
         alt="Car before professional detailing service"
         loading="lazy"
         decoding="async"
-        width="1280"
-        height="720"
+        width="688"
+        height="424"
       />
     </div>
     <div class="gallery-handle" :style="{ left: position + '%' }"></div>
@@ -81,6 +81,7 @@ onBeforeUnmount(() => {
   &-after {
     height: 100%;
     inset: 0;
+    max-width: unset !important;
     object-fit: cover;
     position: absolute;
     width: auto;

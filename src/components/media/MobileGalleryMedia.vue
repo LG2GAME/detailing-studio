@@ -6,8 +6,8 @@
         alt="Car before professional detailing service"
         loading="lazy"
         decoding="async"
-        width="1280"
-        height="720"
+        width="1245"
+        height="768"
       />
       <h2>Before</h2>
     </div>
@@ -17,15 +17,13 @@
         alt="Car after professional detailing and ceramic coating"
         loading="lazy"
         decoding="async"
-        width="1280"
-        height="720"
+        width="1245"
+        height="768"
       />
       <h2>After</h2>
     </div>
   </div>
 </template>
-
-<script></script>
 
 <style lang="scss" scoped>
 .gallery {
