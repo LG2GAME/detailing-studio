@@ -8,6 +8,7 @@
       :aria-expanded="isOpen"
       aria-controls="main-navigation"
       role="button"
+      :aria-hidden="isMobile ? 'false' : 'true'"
     >
       <span></span>
       <span></span>
@@ -17,22 +18,22 @@
       id="main-navigation"
       :class="{ active: isOpen }"
       role="menubar"
-      :aria-hidden="!isOpen"
+      :aria-hidden="isMobile ? !isOpen : false"
     >
-      <li @click="isOpen = false">
-        <a href="#services" role="menuitem">Services</a>
+      <li @click="isOpen = false" role="menuitem">
+        <a href="#services" role="option">Services</a>
       </li>
-      <li @click="isOpen = false">
-        <a href="#gallery" role="menuitem">Gallery</a>
+      <li @click="isOpen = false" role="menuitem">
+        <a href="#gallery" role="option">Gallery</a>
       </li>
-      <li @click="isOpen = false">
-        <a href="#about-us" role="menuitem">About us</a>
+      <li @click="isOpen = false" role="menuitem">
+        <a href="#about-us" role="option">About us</a>
       </li>
-      <li @click="isOpen = false">
-        <a href="#book-now" role="menuitem">Book now</a>
+      <li @click="isOpen = false" role="menuitem">
+        <a href="#book-now" role="option">Book now</a>
       </li>
-      <li @click="isOpen = false">
-        <a href="#contact" role="menuitem">Contact</a>
+      <li @click="isOpen = false" role="menuitem">
+        <a href="#contact" role="option">Contact</a>
       </li>
     </ul>
   </nav>
@@ -40,8 +41,10 @@
 
 <script setup>
 import { onBeforeUnmount, ref, watch } from 'vue'
+import { useMediaQuery } from '@vueuse/core'
 
 const isOpen = ref(false)
+const isMobile = useMediaQuery('(max-width: 992px)')
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value

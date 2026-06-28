@@ -13,35 +13,29 @@
         <li>232 Western Avenue</li>
         <li>Chicago, IL 60642</li>
         <li><a href="tel:+17735281947">(773) 528-1947</a></li>
-        <ul class="footer-info-social">
-          <li>
-            <a href="https://www.whatsapp.com/" target="_blank"
-              ><img
-                src="@/assets/whatsapp.svg"
-                alt="Whatsapp"
-                loading="lazy"
-                decoding="async"
-            /></a>
-          </li>
-          <li>
-            <a href="https://instagram.com/" target="_blank"
-              ><img
-                src="@/assets/instagram.svg"
-                alt="Instagram"
-                loading="lazy"
-                decoding="async"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/" target="_blank"
-              ><img
-                src="@/assets/facebook.svg"
-                alt="Facebook"
-                loading="lazy"
-                decoding="async"
-            /></a>
-          </li>
-        </ul>
+        <li class="footer-info-social">
+          <a href="https://www.whatsapp.com/" target="_blank"
+            ><img
+              src="@/assets/whatsapp.svg"
+              alt="Whatsapp"
+              loading="lazy"
+              decoding="async"
+          /></a>
+          <a href="https://instagram.com/" target="_blank"
+            ><img
+              src="@/assets/instagram.svg"
+              alt="Instagram"
+              loading="lazy"
+              decoding="async"
+          /></a>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              src="@/assets/facebook.svg"
+              alt="Facebook"
+              loading="lazy"
+              decoding="async"
+          /></a>
+        </li>
       </ul>
     </section>
     <section class="footer-copyrights">
