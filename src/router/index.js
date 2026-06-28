@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
 import PrivacyPolicyView from '@/views/PrivacyPolicyView.vue'
 
 export const router = createRouter({
@@ -14,6 +15,11 @@ export const router = createRouter({
       path: '/privacy-policy',
       name: 'privacy',
       component: PrivacyPolicyView
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: NotFoundView
     }
   ]
 })
