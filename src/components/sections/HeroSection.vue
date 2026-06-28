@@ -16,6 +16,7 @@
       src="@/assets/1_hero.webp"
       alt="Professional car detailing studio with luxury vehicles in premium workshop"
       class="hero-background"
+      loading="eager"
       decoding="async"
       fetchpriority="high"
       width="627"
@@ -52,7 +53,6 @@ useHead({
   position: relative;
 
   &-background {
-    filter: blur(1.5px);
     height: 100%;
     inset: 0 0 0 auto;
     max-width: 100%;
