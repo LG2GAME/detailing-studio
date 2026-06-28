@@ -46,3 +46,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+:focus-visible {
+  outline: 2px solid $cl-white;
+  outline-offset: 2px;
+}

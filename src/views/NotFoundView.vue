@@ -2,9 +2,13 @@
   <div class="not-found">
     <h1><i>404</i></h1>
     <p>Page not found</p>
-    <router-link to="/">Back to homepage</router-link>
+    <Button><router-link to="/">Back to homepage</router-link></Button>
   </div>
 </template>
+
+<script setup>
+import Button from '@/components/ui/BaseButton.vue'
+</script>
 
 <style lang="scss" scoped>
 .not-found {
