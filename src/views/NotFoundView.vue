@@ -2,7 +2,9 @@
   <div class="not-found">
     <h1><i>404</i></h1>
     <p>Page not found</p>
-    <Button><router-link to="/">Back to homepage</router-link></Button>
+    <Button type="4o4"
+      ><router-link to="/">Back to homepage</router-link></Button
+    >
   </div>
 </template>
 

@@ -54,6 +54,11 @@ const acceptCookies = () => {
   p a {
     text-decoration: underline;
     cursor: pointer !important;
+    transition: color 0.3s ease-out;
+
+    &:hover {
+      color: $cl-graphite;
+    }
   }
 
   @media (max-width: $bp-large) {

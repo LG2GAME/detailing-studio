@@ -105,8 +105,13 @@
       width: 30%;
 
       a {
-        text-decoration: underline;
         cursor: pointer;
+        text-decoration: underline;
+        transition: color 0.3s ease-out;
+
+        &:hover {
+          color: $cl-graphite;
+        }
       }
 
       @media (max-width: $bp-large) {

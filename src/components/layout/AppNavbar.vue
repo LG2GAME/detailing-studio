@@ -136,6 +136,14 @@ onBeforeUnmount(() => {
         font-size: $fs-medium;
         font-weight: 700;
       }
+
+      a {
+        transition: color 0.3s ease-out;
+
+        &:hover {
+          color: $cl-graphite;
+        }
+      }
     }
   }
 }

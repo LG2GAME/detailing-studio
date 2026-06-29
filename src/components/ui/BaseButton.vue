@@ -1,7 +1,7 @@
 <template>
   <a
     v-if="type === 'button'"
-    :href="hrefee"
+    :href="href"
     target="_blank"
     rel="noopener noreferrer"
     class="btn"
@@ -12,6 +12,15 @@
   <div v-else-if="type === 'decor'" class="btn btn-decor">
     <slot />
   </div>
+
+  <a
+    v-else-if="type === '4o4'"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn"
+  >
+    <slot />
+  </a>
 </template>
 
 <script setup>
@@ -36,11 +45,24 @@ defineProps({
   padding: 10px 20px;
   text-transform: uppercase;
   width: fit-content;
+  transition:
+    color 0.3s ease-out,
+    border-color 0.3s ease-out;
+
+  &:hover {
+    color: $cl-graphite;
+    border-color: $cl-graphite;
+  }
 
   &-decor {
     cursor: default;
     font-size: $fs-medium;
     font-weight: 600;
+
+    &:hover {
+      color: $cl-white;
+      border-color: $cl-white;
+    }
   }
 }
 </style>
