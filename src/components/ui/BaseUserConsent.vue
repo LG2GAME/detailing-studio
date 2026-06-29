@@ -58,6 +58,7 @@ const acceptCookies = () => {
 
   @media (max-width: $bp-large) {
     width: auto;
+    flex-direction: column;
   }
 }
 </style>
