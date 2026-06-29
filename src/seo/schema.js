@@ -2,8 +2,8 @@ export const studioSchema = {
   '@context': 'https://schema.org',
   '@type': 'AutoBodyShop',
   name: 'Professional Chicago Car Detailing',
-  image: 'https://yourdomain.com/favicon.svg',
-  url: 'https://yourdomain.com',
+  image: 'https://detailing-studio-xi.vercel.app/favicon.svg',
+  url: 'https://detailing-studio-xi.vercel.app/',
   telephone: '(773) 528-1947',
   address: {
     '@type': 'PostalAddress',

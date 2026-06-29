@@ -1,4 +1,4 @@
-const siteUrl = import.meta.env.VITE_SITE_URL || 'https://yourdomain.com'
+const siteUrl = 'https://detailing-studio-xi.vercel.app/'
 
 export const seoConfig = {
   title: 'Professional Car Detailing',

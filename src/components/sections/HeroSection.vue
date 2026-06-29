@@ -7,7 +7,7 @@
         in turning tired, neglected vehicles into stunning, protected machines
         that turn heads everywhere you go.
       </p>
-      <BaseButton type="button" :href="bookingUrl">
+      <BaseButton type="button" href="https://github.com/LG2GAME">
         <img src="@/assets/calendar.svg" alt="" decoding="async" /> Get
         appointment
       </BaseButton>
@@ -29,8 +29,6 @@
 import { useHead } from '@unhead/vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import heroImageUrl from '@/assets/1_hero.webp'
-
-const bookingUrl = import.meta.env.VITE_BOOKING_URL
 
 useHead({
   link: [
