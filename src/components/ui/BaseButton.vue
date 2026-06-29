@@ -1,7 +1,7 @@
 <template>
   <a
     v-if="type === 'button'"
-    :href="href"
+    :href="hrefee"
     target="_blank"
     rel="noopener noreferrer"
     class="btn"

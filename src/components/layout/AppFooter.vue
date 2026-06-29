@@ -42,7 +42,7 @@
       </div>
     </section>
     <section class="footer-copyrights">
-      <p>Copyright &#169; 2026 <span>Pawel Wnek</span></p>
+      <p>Copyright &#169; 2026 <span>Arkadiusz Gorszczyk</span></p>
       <p>Developed by <span>AstroCode</span></p>
     </section>
   </footer>
