@@ -7,9 +7,8 @@
         in turning tired, neglected vehicles into stunning, protected machines
         that turn heads everywhere you go.
       </p>
-      <BaseButton type="button" href="https://github.com/LG2GAME">
-        <img src="@/assets/calendar.svg" alt="" decoding="async" /> Get
-        appointment
+      <BaseButton type="button" href="#services">
+        Review the proposal
       </BaseButton>
     </div>
     <img

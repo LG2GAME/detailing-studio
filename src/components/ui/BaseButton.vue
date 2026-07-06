@@ -2,7 +2,7 @@
   <a
     v-if="type === 'button'"
     :href="href"
-    target="_blank"
+    :target="condition ? condition : '_self'"
     rel="noopener noreferrer"
     class="btn"
   >
@@ -29,7 +29,8 @@ defineProps({
   type: {
     type: String,
     default: 'button'
-  }
+  },
+  condition: String
 })
 </script>
 
