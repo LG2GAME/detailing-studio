@@ -1,6 +1,6 @@
 <template>
   <nav id="main-navigation" class="navbar">
-    <h2 class="logo">Detailing Studio</h2>
+    <p class="logo">Detailing Studio</p>
     <button
       v-if="isMobile"
       class="burger"
@@ -83,6 +83,9 @@ onBeforeUnmount(() => {
   z-index: 99;
 
   .logo {
+    font-size: $fs-medium;
+    font-weight: 700;
+    text-transform: uppercase;
     z-index: 99;
   }
 
